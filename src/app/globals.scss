@@ -36,6 +36,31 @@
   color: var(--base);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button,
 :hover {
-  transition-duration: 0.5s;
+  transition: all 0.5s ease-out;
+}
+
+::-moz-selection {
+  background: var(--purple);
+  color: var(--light);
+}
+
+::-webkit-selection {
+  background: var(--purple);
+  color: var(--light);
+}
+
+::selection {
+  background: var(--purple);
+  color: var(--light);
 }

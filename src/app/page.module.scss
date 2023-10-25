@@ -33,6 +33,20 @@ $margin: 70px;
 }
 
 .main {
+  // General
+  .sectionHeading {
+    text-align: center;
+    font-size: var(--h3);
+    color: var(--primary-base);
+  }
+  .sectionSubheading {
+    max-width: 530px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-size: var(--h6);
+  }
+
+  // 1: Hero
   .heroContainer {
     width: 100%;
     min-height: calc(100vh - 70px);
@@ -67,9 +81,50 @@ $margin: 70px;
     }
   }
 
-  // General
-  .sectionHeading {
+  // 2: Tracks
+  .trackContainer {
+    width: 100%;
+    padding: 80px $margin;
+
+    .trackGrid {
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
   }
-  .sectionSubheading {
+
+  // 3. Subjects
+  .subjectContainer {
+    width: 100%;
+    padding: 80px $margin;
+
+    .buttonFilter {
+      width: 100%;
+      margin-top: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .subjectGrid {
+      width: 100%;
+      margin-top: 50px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
+  }
+
+  // 4: Latest Posts
+  .latestContainer {
+    width: 100%;
+    padding: 80px $margin;
   }
 }
