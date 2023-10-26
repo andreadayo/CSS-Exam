@@ -32,6 +32,10 @@ $margin: 70px;
         color: var(--white);
         text-decoration: underline;
       }
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
     }
   }
 }
@@ -41,7 +45,12 @@ $margin: 70px;
   .sectionHeading {
     text-align: center;
     font-size: var(--h3);
+    font-weight: 800;
     color: var(--primary-base);
+
+    @media only screen and (max-width: 600px) {
+      font-size: var(--h4);
+    }
   }
   .sectionSubheading {
     max-width: 530px;
@@ -70,11 +79,20 @@ $margin: 70px;
         font-size: var(--h2);
         font-weight: 800;
         color: var(--primary-base);
+
+        @media only screen and (max-width: 600px) {
+          font-size: var(--h4);
+        }
       }
 
       .subtitle {
         margin-top: 20px;
         font-size: var(--h6);
+
+        @media only screen and (max-width: 600px) {
+          margin-top: 10px;
+          font-size: var(--b1);
+        }
       }
 
       .buttons {
@@ -113,6 +131,10 @@ $margin: 70px;
       justify-content: center;
       align-items: center;
       gap: 20px;
+
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+      }
     }
 
     .subjectGrid {
@@ -139,6 +161,12 @@ $margin: 70px;
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: 1150px) {
+    padding: 50px 70px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .left {
     display: flex;
     flex-direction: column;
@@ -157,6 +185,10 @@ $margin: 70px;
       font-size: var(--b2);
       font-weight: 600;
       color: var(--primary-base);
+
+      @media only screen and (max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
 

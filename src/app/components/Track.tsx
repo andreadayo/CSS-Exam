@@ -25,7 +25,7 @@ const Track: React.FC<TrackProps> = ({ title, description, imagePath }) => {
 
       <h5 className={styles.title}>{title}</h5>
       <p className={styles.description}>{description}</p>
-      <Button href="/">Learn More</Button>
+      <Button>Learn More</Button>
     </div>
   );
 };

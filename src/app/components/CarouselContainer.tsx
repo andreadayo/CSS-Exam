@@ -14,7 +14,6 @@ export default class CarouselContainer extends Component {
       slidesToShow: 4,
       slidesToScroll: 4,
       autoplay: true,
-      swipeToSlide: true,
       autoplaySpeed: 10000,
       cssEase: "linear",
       responsive: [

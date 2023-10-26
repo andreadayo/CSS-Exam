@@ -26,7 +26,7 @@ const Subject: React.FC<SubjectProps> = ({ code, title, imagePath }) => {
         <h5 className={styles.code}>{code}</h5>
         <h6 className={styles.title}>{title}</h6>
         <div className={styles.buttonContainer}>
-          <Button href="/">Learn More</Button>
+          <Button>Learn More</Button>
         </div>
       </div>
     </div>

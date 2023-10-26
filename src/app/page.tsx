@@ -152,7 +152,7 @@ export default function Home() {
             <a href="/">News & Events</a>
           </div>
           <div className={styles.social}>
-            <a href="/">
+            <a href="mailto:css.cics@ust.edu.ph" target="_blank">
               <Image
                 src="/assets/social/envelope-solid.svg"
                 alt="Email"
@@ -161,7 +161,7 @@ export default function Home() {
               />
               <span>Email</span>
             </a>
-            <a href="/">
+            <a href="https://www.facebook.com/USTCSS" target="_blank">
               <Image
                 src="/assets/social/square-facebook.svg"
                 alt="Email"
@@ -170,7 +170,7 @@ export default function Home() {
               />
               <span>Facebook</span>
             </a>
-            <a href="/">
+            <a href="https://twitter.com/USTCSS" target="_blank">
               <Image
                 src="/assets/social/square-x-twitter.svg"
                 alt="Email"
@@ -179,7 +179,7 @@ export default function Home() {
               />
               <span>Twitter</span>
             </a>
-            <a href="/">
+            <a href="https://www.instagram.com/ustcss/" target="_blank">
               <Image
                 src="/assets/social/square-instagram.svg"
                 alt="Email"
