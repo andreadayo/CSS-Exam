@@ -3,20 +3,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Post from "../components/Post";
+import posts from "../../../public/data/posts";
+
 export default class CarouselContainer extends Component {
   render() {
     const settings = {
       dots: true,
       infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 4,
       autoplay: true,
-      speed: 2000,
+      swipeToSlide: true,
       autoplaySpeed: 10000,
       cssEase: "linear",
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1400,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -25,7 +28,7 @@ export default class CarouselContainer extends Component {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 1100,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -42,26 +45,16 @@ export default class CarouselContainer extends Component {
       ],
     };
     return (
-      <div>
+      <div style={{ marginTop: "30px" }}>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+          {posts.map((post, index) => (
+            <Post
+              key={index}
+              title={post.title}
+              postDate={post.postDate}
+              imagePath={post.imagePath}
+            />
+          ))}
         </Slider>
       </div>
     );

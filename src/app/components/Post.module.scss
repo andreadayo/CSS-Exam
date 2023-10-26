@@ -1,0 +1,46 @@
+.postBox {
+  width: 85%;
+  height: 280px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .postContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 40%,
+      #000 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+
+    .title {
+      font-size: var(--h6);
+      color: var(--white);
+    }
+
+    .description {
+      font-size: var(--b2);
+      color: var(--white);
+    }
+  }
+}
+
+.postBox:hover {
+  transform: scale(1.1);
+}

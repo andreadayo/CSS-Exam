@@ -12,6 +12,7 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import Image from "next/image";
 
 interface ParallaxProps {
   children: string;
@@ -66,16 +67,10 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   return (
     <div className={styles.parallax}>
       <motion.div className={styles.scroller} style={{ x }}>
-        {Array.from({ length: 6 }).map((_, index) => (
+        {Array.from({ length: 24 }).map((_, index) => (
           <React.Fragment key={index}>
-            <span>{children}</span>
-            <span>∙</span>
-            <span className="outline">{children}</span>
-            <span>∙</span>
-            <span>{children}</span>
-            <span>∙</span>
-            <span className="outline">{children}</span>
-            <span>∙</span>
+            <Image src="/assets/css-logo.png" alt="CSS Logo" width="100" height="75" />
+            <div style={{ width: "20px" }}></div>
           </React.Fragment>
         ))}
       </motion.div>
